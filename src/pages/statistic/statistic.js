@@ -14,7 +14,7 @@ const StatisticPage = () => {
 
   const idCoin = sessionStorage.getItem('IdCoin')
   const { minRevenue, maxRevenue, totalRevenue, mediumRevenue } = countRevenue(chartData)
-  console.log(minRevenue)
+  
   useEffect(() => {
     setLoading(true)
     axios.get(`https://oril-coins-test.herokuapp.com/item/${idCoin}`).then((response) => {
