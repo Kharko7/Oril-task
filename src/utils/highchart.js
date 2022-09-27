@@ -3,6 +3,9 @@ import Highcharts from 'highcharts/highstock';
 export const getOptions = (data) => {
  
   return {
+    accessibility: {
+      enabled: false,
+    },
     title: {
       text: 'Revenue',
       align: 'left',
